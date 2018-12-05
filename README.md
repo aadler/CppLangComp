@@ -1,0 +1,1 @@
+This package contains various flavors of Rcpp (C++) versions of a simple layer loss cost function. These flavors represent levels of OpenMP parallelism. These functions' performance will be compared with base R and Fortran versions of the same function in the RFortLangComp package. There will eventually be a blogpost discussing the languages.
