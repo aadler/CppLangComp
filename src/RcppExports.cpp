@@ -5,64 +5,64 @@
 
 using namespace Rcpp;
 
-// LLC_c
-double LLC_c(NumericVector X, double L, double A);
-RcppExport SEXP _CppLangComp_LLC_c(SEXP XSEXP, SEXP LSEXP, SEXP ASEXP) {
+// LLC_cpp
+double LLC_cpp(NumericVector X, double L, double A);
+RcppExport SEXP _CppLangComp_LLC_cpp(SEXP XSEXP, SEXP LSEXP, SEXP ASEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< NumericVector >::type X(XSEXP);
     Rcpp::traits::input_parameter< double >::type L(LSEXP);
     Rcpp::traits::input_parameter< double >::type A(ASEXP);
-    rcpp_result_gen = Rcpp::wrap(LLC_c(X, L, A));
+    rcpp_result_gen = Rcpp::wrap(LLC_cpp(X, L, A));
     return rcpp_result_gen;
 END_RCPP
 }
-// LLC_cs
-double LLC_cs(NumericVector X, double L, double A);
-RcppExport SEXP _CppLangComp_LLC_cs(SEXP XSEXP, SEXP LSEXP, SEXP ASEXP) {
+// LLC_cpps
+double LLC_cpps(NumericVector X, double L, double A);
+RcppExport SEXP _CppLangComp_LLC_cpps(SEXP XSEXP, SEXP LSEXP, SEXP ASEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< NumericVector >::type X(XSEXP);
     Rcpp::traits::input_parameter< double >::type L(LSEXP);
     Rcpp::traits::input_parameter< double >::type A(ASEXP);
-    rcpp_result_gen = Rcpp::wrap(LLC_cs(X, L, A));
+    rcpp_result_gen = Rcpp::wrap(LLC_cpps(X, L, A));
     return rcpp_result_gen;
 END_RCPP
 }
-// LLC_cl
-double LLC_cl(NumericVector X, double L, double A);
-RcppExport SEXP _CppLangComp_LLC_cl(SEXP XSEXP, SEXP LSEXP, SEXP ASEXP) {
+// LLC_cppl
+double LLC_cppl(NumericVector X, double L, double A);
+RcppExport SEXP _CppLangComp_LLC_cppl(SEXP XSEXP, SEXP LSEXP, SEXP ASEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< NumericVector >::type X(XSEXP);
     Rcpp::traits::input_parameter< double >::type L(LSEXP);
     Rcpp::traits::input_parameter< double >::type A(ASEXP);
-    rcpp_result_gen = Rcpp::wrap(LLC_cl(X, L, A));
+    rcpp_result_gen = Rcpp::wrap(LLC_cppl(X, L, A));
     return rcpp_result_gen;
 END_RCPP
 }
-// LLC_cls
-double LLC_cls(NumericVector X, double L, double A);
-RcppExport SEXP _CppLangComp_LLC_cls(SEXP XSEXP, SEXP LSEXP, SEXP ASEXP) {
+// LLC_cppls
+double LLC_cppls(NumericVector X, double L, double A);
+RcppExport SEXP _CppLangComp_LLC_cppls(SEXP XSEXP, SEXP LSEXP, SEXP ASEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< NumericVector >::type X(XSEXP);
     Rcpp::traits::input_parameter< double >::type L(LSEXP);
     Rcpp::traits::input_parameter< double >::type A(ASEXP);
-    rcpp_result_gen = Rcpp::wrap(LLC_cls(X, L, A));
+    rcpp_result_gen = Rcpp::wrap(LLC_cppls(X, L, A));
     return rcpp_result_gen;
 END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_CppLangComp_LLC_c", (DL_FUNC) &_CppLangComp_LLC_c, 3},
-    {"_CppLangComp_LLC_cs", (DL_FUNC) &_CppLangComp_LLC_cs, 3},
-    {"_CppLangComp_LLC_cl", (DL_FUNC) &_CppLangComp_LLC_cl, 3},
-    {"_CppLangComp_LLC_cls", (DL_FUNC) &_CppLangComp_LLC_cls, 3},
+    {"_CppLangComp_LLC_cpp", (DL_FUNC) &_CppLangComp_LLC_cpp, 3},
+    {"_CppLangComp_LLC_cpps", (DL_FUNC) &_CppLangComp_LLC_cpps, 3},
+    {"_CppLangComp_LLC_cppl", (DL_FUNC) &_CppLangComp_LLC_cppl, 3},
+    {"_CppLangComp_LLC_cppls", (DL_FUNC) &_CppLangComp_LLC_cppls, 3},
     {NULL, NULL, 0}
 };
 
